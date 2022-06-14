@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Form</title>
+
+<link rel="stylesheet" href = "../CSS/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <form  name = "CustomerDetails">
+<h2>Customer Details:</h2>
+
+
+  <div class="asterisk">Full Name</div><br>
+ 
+<div style = "float:left; padding-right: 50px">
+  <input type="text" size="30%" id="fname" name="fname" value=""><br>
+  <div class="error" id ="fnameErr"></div>
+  <label for="fname">First Name</label><br>
+</div>
+  
+<div>
+<input type="text" size="30%" id="lname" name="lname" value=""><br>
+<div class="error" id ="lnameErr"></div>
+<label for="lname">Last Name</label> 
+</div><br>
+  
+<div class="asterisk">Address:</div><br>
+ 
+  
+<input type="text"  size="80%" id="streetadd1" name="streetadd1">
+<div class="error" id ="st1Err"></div>
+  <p>Street Address</p>
+ 
+  
+<input type="text" size="80%" id="streetadd2" name="streetadd2"><br>
+<div class="error" id ="st2Err"></div>
+  <p>Street Address Line2</p>  
+  
+<div style = "float:left; padding-right: 50px">
+<input type="text" size="30%" id="city" name="city"><br>
+<div class="error" id ="cityErr"></div>
+  <p>City</p>
+</div>
+
+<input type="text" size="30%" id="state" name="state"><br>
+<div class="error" id ="stateErr"></div>
+  <p>State/Province</p><br>
+  
+ <input type="text" id="pin" name="pin"><br>
+ <div class="error" id ="pinErr"></div>
+  <p>Pincode/Zipcode</p>
+  
+<div class="asterisk">Phone Number</div><br>
+<label for="phone"></label>
+  <input type="tel" size="30%" id="phone" name="phone" placeholder="(000) 000-0000"><br><br>
+  <div class="error" id ="phnErr"></div>
+  
+<label for="email">E-mail</label><br><br>
+  <input type="email" size="30%" id="email" name="email" placeholder="ex:email@yahoo.com">
+  <div class="error" id ="emailErr"></div>
+    <p>example@example.com</p><br>
+
+  
+<div class="asterisk">How did you hear about us?</div><br>
+<select>
+  <option selected>Magazine</option>
+  <option>Social Media</option>
+  <option>Friends</option>
+  <option>Website</option>
+</select><br><br>
+
+<label for="Feedback about us" >Feedback about us:</label><br>
+<textarea cols="80" rows="6" id="feed">
+</textarea><br><br>
+<div class="error" id ="feedErr"></div>
+
+<label for="Suggestion if any for further improvement" >Suggestion if any for further improvement:</label><br>
+<textarea cols="80" rows="6" id="sugg">
+</textarea><br><br>
+<div class="error" id ="suggErr"></div>
+
+
+<label for="us">Will you be willing to recommend us?</label>
+  <input type="checkbox" id="us" name="us" value="us"><br><br>
+ 
+
+<label for="gender">Gender:</label>
+
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label>
+<input type="radio" id="others" name="gender" value="others">
+ <label for="others">Others</label><br><br>
+ <div class="error" id ="genderErr"></div>
+  
+<p3>Please give reference of any two people whom you feel:</p3>
+<br><br>
+
+<table>
+  <tr>
+    <th style="border-style: none"> </th>
+    <th style="background-color: #dddddd ">Full Name</th>
+    <th style="background-color: #dddddd">Address</th>
+    <th style="background-color: #dddddd">Contact Number</th>
+  </tr>
+  
+<tr>
+    <td style="background-color: #dddddd">1</td>
+    <td></td>
+    <td> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="background-color: #dddddd">2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table><br>
+
+<div class="submit_class">
+  <input type="submit" id="submit" value="Submit">
+</div>  
+  
+  </form>
+  <script src="../JQ/customer_jq.js"></script> 
+</body>
+
+</html>
